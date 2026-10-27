@@ -223,7 +223,6 @@ class ELPDData:
     good_k: float
     elpd_i: DataArray = None
     pareto_k: DataArray = None
-    data_hash: str | None = None
 
     _kind: ClassVar[str | None] = None
     _display_kind: ClassVar[str | None] = None
@@ -304,6 +303,7 @@ class ELPDDataLOO(ELPDData):
     p_loo_i: DataArray = None
     influence_pareto_k: DataArray = None
     n_eff_i: DataArray = None
+    data_hash: str | None = None
 
     def _header(self):
         header = super()._header()
